@@ -1,0 +1,122 @@
+$font-sec-color:rgb(0, 85, 165);
+$page-color: white;
+$gap: 190px;
+
+.todoList {
+	display: flex;
+	justify-content: center;
+	width : 100%;
+	
+	.page {
+		box-shadow: 2px 2px rgb(141, 129, 129);
+		background-color: $page-color;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+			
+		.topRow {
+			border-bottom: 0.5px solid whitesmoke;
+			height: 50px;
+			justify-content: space-around;
+			display: flex;
+			align-items: center;
+			color : $font-sec-color;
+			font-size: large;
+
+			.previous {
+				display: inline-flex;
+				justify-content: left;
+				cursor: pointer;
+				font-weight: 900; 
+				flex-basis: 20%;               
+			}
+
+			.date {
+				flex-basis: 60%;
+			}
+
+			.next{
+				cursor: pointer;
+				font-weight: 900;
+			}
+		}
+
+		.row {
+			height: 45px;
+			margin-top: 9px;
+			align-items: center;
+			justify-content: space-around;
+			display: flex;
+
+			.checkbox {
+				display: flex;
+				cursor: pointer;
+				flex-basis: calc(20% - #{$gap});
+			}
+
+			.taskText{
+				display: flex;
+				color: $font-sec-color;
+				flex-basis: calc(60% - 40px);
+				
+				&--done {
+						text-decoration: line-through;
+				}
+			}
+
+			.time {
+				display: flex;
+				color: rgb(131, 131, 182);
+				font-size : small;
+				flex-basis: calc(20% - #{$gap});				
+			}
+		}
+
+		.footerRow {
+			border-top: 0.5px solid whitesmoke;
+			display: flex;
+			width: 440px;
+			height: 50px;
+			justify-content: space-between;
+			align-items: center;
+			
+			.numOfTasks {
+					flex-basis: 22%;
+					display: flex;
+					justify-content: center;
+					color: rgb(173, 166, 166);  
+			}
+	
+			.addbutton {
+				display: flex;
+				justify-content: right;
+				flex-basis: 26%;
+
+				.addNew {
+						display: flex;
+						font-size: smaller;
+						font-size: large;
+						color: $font-sec-color;
+						cursor: pointer;
+						width: 99%;
+						align-items: center;
+				}
+
+				.addTask {
+						display: inline-flex;
+						color: $font-sec-color;
+						cursor: pointer;
+						width: 40px;
+						height: 44px;
+						font-size: 29px;
+				}
+
+				.text {
+					height: 35px;
+					display: flex;
+					margin: 30px;
+				}
+			}
+		}
+	}
+}

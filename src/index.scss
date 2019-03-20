@@ -1,0 +1,17 @@
+
+      $background-color : rgb(255, 167, 153);
+      $font : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            sans-serif;
+
+      body {
+            background-color: $background-color;
+            font-family: $font;
+            display: flex;
+            border-collapse: collapse;
+      
+            #root {
+                  width: 100%;
+                  display: flex;
+            }
+      }

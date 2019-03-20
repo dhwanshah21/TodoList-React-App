@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
     "react": "^16.8.4",
+    "react-day-picker": "^7.3.0",
     "react-dom": "^16.8.4",
+    "react-modern-datepicker": "^0.7.1",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {

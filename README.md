@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React App
 
-## Available Scripts
+-> This is a simple React App which is basically useful in day to day life for scheduling the todos for a     particular day.
+-> The user is allowed to add tasks or note down the important tasks which he is afraid of forgetting in      his/her busy life. 
+-> The user can Add Tasks on a particular day by clicking 'ADD NEW'-> Entering the task -> TAP '+'. For       instance : 'Meeting with XYZ'. 
+-> We have also provided a checkbox with that task text which can be useful when the user acknowledges        that the given task is completed. So, the user checks the checkbox and the task is then dropped to the     bottom of the list with a sign of disabled.
+-> Also the total of NOT DONE Tasks are shown at the bottom left of the page. Basically the ones which are    not checked.
+-> According to the given specs the user can not go to the NEXT DATES but can go to the previous days by      clicking '<' to see the tasks in previous days. If there are no tasks then it simply shows 0 Tasks.
 
-In the project directory, you can run:
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Unzip the solution.
+2. Run `yarn` to install the dependencies.
+3. Run `yarn start` or `npm start` to run the app and go to http://localhost:3000/ to view. I have tested it on chrome browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Understanding the React App :
 
-### `npm test`
+├── package.json                     # Node related dependencies and scripts                                                    ├── package-lock.json               
+├── src ├── index.js                 # Main root file where App.js file is called
+        ├── index.scss                   
+        ├── App.js                   # Manages all routes and decide which component should be called depending on the path
+        ├── TodoList ├── TodoList.js # Manages all the todos of the particular day
+                     ├── Storage.js  # Storage of todos in local storage
+                     ├── TodoList.scss
+                     ├── utils.js            
+        ├── App.scss
+        ├── App.test.js
+        ├── serviceworker.js
+├── public  ├── index.html
+            ├── manifest.json
+├── node-modules
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies and Development Tools Used for the Project :
 
-### `npm run build`
+- JavaScript(ES6), localstorage, React.js, HTML, SCSS, Microsoft VS Code, npm and Trello.   
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Future Enhancements :
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Allowing to create a common TodoList for a team. Basically making a group using email-ids so that the      teamwork can be scheduled in a better way.
+- 'Delete/Update' feature for deleting the selected todos.
+- Pagination/Next/Prev for huge number of todos.
+- Setting a deadline for a particular todo.
+- Also, if the deadline is missed, sending a notification or an alarm setting like before 1 hour of          deadline.
