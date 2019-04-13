@@ -13,7 +13,7 @@
 
 1. Unzip the solution.
 2. Run `yarn` to install the dependencies.
-3. Run `yarn start` or `npm start` to run the app and go to http://localhost:3000/ to view. <br> 
+3. Run `yarn start` or `npm start` to run the app and go to http://localhost:3000/ to view. 
    I have tested it on chrome browser.
 
 ## Understanding the React App :
