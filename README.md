@@ -1,13 +1,13 @@
 
 ## React App
-
+<pre>
 -> This is a simple React App which is basically useful in day to day life for scheduling the todos for a particular day.<br>
 -> The user is allowed to add tasks or note down the important tasks which he is afraid of forgetting in his/her busy life. <br>
 -> The user can Add Tasks on a particular day by clicking 'ADD NEW'-> Entering the task -> TAP '+'. For instance : 'Meeting with XYZ'.<br> 
 -> We have also provided a checkbox with that task text which can be useful when the user acknowledges that the given task is completed.      So, the user checks the checkbox and the task is then dropped to the bottom of the list with a sign of disabled.
 -> Also the total of NOT DONE Tasks are shown at the bottom left of the page. Basically the ones which are not checked.<br>
 -> According to the given specs the user can not go to the NEXT DATES but can go to the previous days by clicking '<' to see the tasks        in previous days. If there are no tasks then it simply shows 0 Tasks.<br>
-
+</pre>
 ## Getting Started
 
 1. Unzip the solution.
